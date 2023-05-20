@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G2_zadaca_EM
 {
-    public partial class FrmStudent : Form
+    public partial class FrmStudents : Form
     {
-        public FrmStudent()
+        public FrmStudents()
         {
             InitializeComponent();
         }
