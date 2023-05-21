@@ -57,6 +57,7 @@
             // 
             // cboActivities
             // 
+            this.cboActivities.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboActivities.FormattingEnabled = true;
             this.cboActivities.Location = new System.Drawing.Point(46, 32);
             this.cboActivities.Name = "cboActivities";
@@ -85,6 +86,7 @@
             // 
             this.txtMinForSignature.Location = new System.Drawing.Point(260, 32);
             this.txtMinForSignature.Name = "txtMinForSignature";
+            this.txtMinForSignature.ReadOnly = true;
             this.txtMinForSignature.Size = new System.Drawing.Size(161, 20);
             this.txtMinForSignature.TabIndex = 4;
             // 
@@ -92,6 +94,7 @@
             // 
             this.txtMinForGrade.Location = new System.Drawing.Point(427, 32);
             this.txtMinForGrade.Name = "txtMinForGrade";
+            this.txtMinForGrade.ReadOnly = true;
             this.txtMinForGrade.Size = new System.Drawing.Size(154, 20);
             this.txtMinForGrade.TabIndex = 5;
             // 
@@ -100,6 +103,7 @@
             this.txtActivityDescription.Location = new System.Drawing.Point(46, 68);
             this.txtActivityDescription.Multiline = true;
             this.txtActivityDescription.Name = "txtActivityDescription";
+            this.txtActivityDescription.ReadOnly = true;
             this.txtActivityDescription.Size = new System.Drawing.Size(535, 122);
             this.txtActivityDescription.TabIndex = 6;
             // 
@@ -116,6 +120,7 @@
             // 
             this.txtTeacher.Location = new System.Drawing.Point(233, 220);
             this.txtTeacher.Name = "txtTeacher";
+            this.txtTeacher.ReadOnly = true;
             this.txtTeacher.Size = new System.Drawing.Size(124, 20);
             this.txtTeacher.TabIndex = 8;
             // 
@@ -123,6 +128,7 @@
             // 
             this.txtEvaluationDate.Location = new System.Drawing.Point(363, 220);
             this.txtEvaluationDate.Name = "txtEvaluationDate";
+            this.txtEvaluationDate.ReadOnly = true;
             this.txtEvaluationDate.Size = new System.Drawing.Size(124, 20);
             this.txtEvaluationDate.TabIndex = 9;
             // 
