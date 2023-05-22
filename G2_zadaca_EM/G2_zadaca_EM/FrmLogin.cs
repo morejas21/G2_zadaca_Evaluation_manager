@@ -1,4 +1,6 @@
-﻿using System;
+﻿using G2_zadaca_EM.Models;
+using G2_zadaca_EM.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,8 +15,7 @@ namespace G2_zadaca_EM
 {
     public partial class FrmLogin : Form
     {
-        string username = "nastavnik";
-        string password = "test";
+        public static Teacher LoggedTeacher { get; set; }
 
         public FrmLogin()
         {
@@ -35,7 +36,8 @@ namespace G2_zadaca_EM
             }
             else
             {
-                if (txtUsername.Text == username && txtPassword.Text == password)
+                LoggedTeacher = TeacherRepository.GetTeacher(txtUsername.Text);
+                if (LoggedTeacher != null && LoggedTeacher.Password == txtPassword.Text)
                 {
                     FrmStudents frmStudents = new FrmStudents();
                     Hide();
