@@ -54,6 +54,5 @@ namespace G2_zadaca_EM.Repositories
             return teacher;
         }
 
-
     }
 }
